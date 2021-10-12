@@ -1,0 +1,110 @@
+:root {
+  --body-color: #2c2d2a;
+  --container-bg: #FFFEF2;
+  --savanna-bg: #B1CCCD;
+  --beach-bg: #828F85;
+  --glacier-bg: #DEBEB3;
+  --coral-bg: #EBE2D5;
+  --arrow-fill: #333231;
+  --body-font: "Andale Mono", sans-serif;
+  --italic-font: "EB Garamond", serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "product_image product_image product_image product_title product_title product_title"
+    "product_image product_image product_image product_description product_description product_description"
+    "product_image product_image product_image product_description product_description product_description"
+    "product_image product_image product_image product_description product_description product_description"
+    "product_image product_image product_image buy_button buy_button buy_button"
+    "ingredient_image ingredient_image ingredient_image ingredient_description ingredient_description ingredient_description"
+    "ingredient_image ingredient_image ingredient_image ingredient_description ingredient_description ingredient_description"
+    "ingredient_image ingredient_image ingredient_image ingredient_description ingredient_description ingredient_description"
+    "ingredient_image ingredient_image ingredient_image ingredient_description ingredient_description ingredient_description";
+  width: 100%;
+  height: 100%;
+  background-color: var(--container-bg);
+}
+
+.nav { grid-area: nav; background-color: var(--savanna-bg);}
+
+.product_image { grid-area: product_image; background-color: var(--container-bg);}
+
+.product_title { grid-area: product_title; background-color: var(--beach-bg);}
+
+.product_description { grid-area: product_description; background-color: var(--glacier-bg);}
+
+.buy_button { grid-area: buy_button; background-color: var(--coral-bg);}
+
+.ingredient_image { grid-area: ingredient_image; background-color: var(--beach-bg);}
+
+.ingredient_description { grid-area: ingredient_description; background-color: var(--glacier-bg);}
+
+.container_2 {
+  margin-top: 10px;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ gap: 10px 10px;
+ grid-auto-flow: row dense;
+ grid-template-areas:
+   "ingredeint_2 ingredeint_2 ingredeint_2 ingredeint_des_2 ingredeint_des_2 ingredeint_des_2"
+   "ingredeint_2 ingredeint_2 ingredeint_2 ingredeint_des_2 ingredeint_des_2 ingredeint_des_2"
+   "ingredeint_2 ingredeint_2 ingredeint_2 ingredeint_des_2 ingredeint_des_2 ingredeint_des_2"
+   "ingredeint_2 ingredeint_2 ingredeint_2 ingredeint_des_2 ingredeint_des_2 ingredeint_des_2"
+   "ingredient_3 ingredient_3 ingredient_3 ingredient_dec_3 ingredient_dec_3 ingredient_dec_3"
+   "ingredient_3 ingredient_3 ingredient_3 ingredient_dec_3 ingredient_dec_3 ingredient_dec_3"
+   "ingredient_3 ingredient_3 ingredient_3 ingredient_dec_3 ingredient_dec_3 ingredient_dec_3"
+   "ingredient_3 ingredient_3 ingredient_3 ingredient_dec_3 ingredient_dec_3 ingredient_dec_3"
+   "how_to_use how_to_use how_to_use safety safety safety"
+   "how_to_use how_to_use how_to_use safety safety safety";
+ width: 100%;
+ height: 100%;
+
+}
+
+.ingredeint_2 { grid-area: ingredeint_2;  background-color: blue;}
+
+.ingredeint_des_2 { grid-area: ingredeint_des_2;  background-color: red;}
+
+.ingredient_3 { grid-area: ingredient_3;  background-color: pink;}
+
+.ingredient_dec_3 { grid-area: ingredient_dec_3;  background-color: green;}
+
+.how_to_use { grid-area: how_to_use; background-color:yellow; }
+
+.safety { grid-area: safety; background-color: grey; }
+
+.container_3 {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    "recommendation_title recommendation_title recommendation_title recommendation_title recommendation_title recommendation_title"
+    "recommend_product recommend_product recommend_product recommend_product recommend_product recommend_product"
+    "recommend_product recommend_product recommend_product recommend_product recommend_product recommend_product"
+    "recommend_product recommend_product recommend_product recommend_product recommend_product recommend_product"
+    "recommend_product recommend_product recommend_product recommend_product recommend_product recommend_product"
+    "recommend_product recommend_product recommend_product recommend_product recommend_product recommend_product"
+    "footer footer footer footer footer footer"
+    "footer footer footer footer footer footer"
+    "footer footer footer footer footer footer"
+    "footer footer footer footer footer footer";
+  width: 100%;
+  height: 100%;
+}
+
+.recommendation_title { grid-area: recommendation_title; background-color: pink;}
+
+.recommend_product { grid-area: recommend_product; background-color: orange;}
+
+.footer { grid-area: footer; background-color: grey;}

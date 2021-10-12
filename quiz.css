@@ -1,0 +1,31 @@
+:root {
+  --body-color: #2c2d2a;
+  --container-bg: #FFFEF2;
+  --savanna-bg: #B1CCCD;
+  --beach-bg: #828F85;
+  --glacier-bg: #DEBEB3;
+  --coral-bg: #EBE2D5;
+  --arrow-fill: #333231;
+  --body-font: "Andale Mono", sans-serif;
+  --italic-font: "EB Garamond", serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row dense;
+  width: 100%;
+  height: 100%;
+}
+
+.nav { grid-area: 1 / 1 / 2 / 4;background-color: var(--beach-bg);}
+
+.quiz { grid-area: 2 / 1 / 11 / 4; background-color: var(--glacier-bg)}
+
+.Title { grid-area: 2 / 1 / 4 / 4; background-color: var(--coral-bg)}
+
+.quiz-content { grid-area: 4 / 1 / 9 / 4;background-color: var(--container-bg)}
+
+.next_button { grid-area: 9 / 3 / 10 / 4;background-color: var(--savanna-bg) }
